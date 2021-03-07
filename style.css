@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    font-family: "Roboto";
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 2rem;
+}
+
+
+header h2 {
+    color: #D2872C;
+    font-size: 30px;
+    
+}
+
+header nav a{
+    font-size: 20px;
+    margin-right: 2rem;
+    color: #766F68;
+}
+
+main {
+    margin: 5rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+main .container h1 {
+    color: #766F68;
+    font-size: 5rem;
+}
+
+main .container p {
+    color: #766F68;
+    font-size: 1.5rem;
+
+    margin-top: 3rem;
+
+    width: 70%;
+}
+
+main .container button {
+    margin-top: 3rem;
+
+    width: 300px;
+    height: 50px;
+
+    border: none;
+    border-radius: 8px;
+
+    color: white;
+    background: #D2872C;
+
+    font-size: 1.5rem;
+}
+
+
+main img {
+    width: 800px;
+
+    z-index: -1;
+
+    margin-top: 15px;
+    margin-left: -200px;
+}
+
+@media screen and (max-width: 1100px) {
+    main img {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .container{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    main .container h1 {
+        font-size: 4rem;
+    }
+
+    main img {
+        width: 400px;
+        height: 300px;
+
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    main .container h1 {
+        font-size: 2.5rem;
+    }
+
+    main .container p {
+        font-size: 1.2rem;
+    }
+
+    main img {
+        width: 300px;
+        height: 200px;
+    }
+}
